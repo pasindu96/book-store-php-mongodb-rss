@@ -73,8 +73,8 @@
 				echo "<td>".$book->description."</td>";
 				echo "<td>".$book->pub_date."</td>";
 				echo "<td>";
-				echo "<a href='edit.php?id=".$book->_id."' class='btn btn-primary'>Edit</a>";
-				echo "<a href='delete.php?id=".$book->_id."' class='btn btn-danger'>Delete</a>";
+				echo "<a href='edit_book.php?id=".$book->_id."' class='btn btn-primary'>Edit</a>";
+				echo "<a href='remove_book.php?id=".$book->_id."' class='btn btn-danger'>Delete</a>";
 				echo "</td>";
 				echo "</tr>";
 			};

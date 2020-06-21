@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
 	<div id="form_container">
 	
 		<h1><a>Add new book - Book Store</a></h1>
-		<form id="form_115199" class="appnitro"  method="post" action="add">
+		<form id="form_115199" class="appnitro"  method="post" action="add_book.php">
 					<div class="form_description">
 			<h2>Add new book - Book Store</h2>
 			<p>Add new books here</p>
@@ -74,8 +74,7 @@ if(isset($_POST['submit'])){
 		</li>		<li id="li_5" >
 		<label class="description" for="element_5">Description </label>
 		<div>
-			<textarea id="element_5" name="description" class="element text medium" value="" rows="5"> 
-			</textarea>
+			<textarea id="element_5" name="description" rows="5" style="width:70%;"></textarea>
 		</div> 
 		</li>
 			
