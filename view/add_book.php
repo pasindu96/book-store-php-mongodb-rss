@@ -33,10 +33,12 @@ if(isset($_POST['submit'])){
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Add new book - Book Store</title>
 <link rel="stylesheet" type="text/css" href="css/view.css" media="all">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <script type="text/javascript" src="js/view.js"></script>
 
 </head>
-<body id="main_body" >
+<body id="main_body" style="background-color: #04f">
 	
 	<img id="top" src="img/top.png" alt="">
 	<div id="form_container">
@@ -77,11 +79,11 @@ if(isset($_POST['submit'])){
 		</div> 
 		</li>
 			
-					<li class="buttons">
-			    <input type="hidden" name="form_id" value="115199" />
-			    <div class="row">
-					<div class="col">
-					<hr id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+	    <li class="buttons">
+			    <div class="row container-flui text-center" >
+					<div style="margin:0 auto;">
+					<button id="saveForm" class="btn btn-md btn-primary" type="submit" name="submit" style="margin-right:8px;"> Submit </button>
+					<a class="btn btn-md btn-success" href="index.php">Go Back</a>
 					</div>
 				</div>
 				
@@ -92,4 +94,8 @@ if(isset($_POST['submit'])){
 	</div>
 	<img id="bottom" src="img/bottom.png" alt="">
 	</body>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </html>

@@ -16,11 +16,11 @@
 		<h1> Book Store - Matara </h1>
 		<hr>
 		<div class="row">
-			<div class="col-md-6 sm-12">
+			<div class="col-md-3 sm-12">
 				<p style="line-height:24px;"> Get Data from RSS Feed </p> 
 			</div>
-			<div class="col-md-3">
-				<input type="file"> 
+			<div class="col-md-6">
+				<input type="text" placeholder="Enter RSS Link" style="width:80%;"> 
 			</div>
 			<div class="col-md-3">
 				<button class="btn btn-md btn-primary"> Update Database</button>
@@ -28,14 +28,11 @@
 		</div>
 		<hr>
 		<div class="row">
-			<div class="col-md-6 sm-12">
-				<p style="line-height:24px;"> Add a new Book </p> 
+			<div class="col-md-9 sm-12">	
 			</div>
-			<div class="col-md-3">
+
+			<div class="col-md-3" style="text-alighn:right;">
 			<a class="btn btn-md btn-success"> Refresh </a>
-			
-			</div>
-			<div class="col-md-3">
 			<a class="btn btn-md btn-primary" href="add_book.php"> Add New Book </a>
 			</div>
 		</div>
