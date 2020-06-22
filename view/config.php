@@ -1,7 +1,13 @@
 <?php
 
-require __DIR__ . "/vendor/autoload.php";
+require 'vendor/autoload.php'; // include Composer's autoloader
 
-$collection = (new MongoDB\Client)->book_store->books;
+$manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+
+$client = new \MongoDB\Client("mongodb://localhost:27017");
+
+// $client = new MongoClient("mongodb://localhost:27017");
+$collection = $client->book_store->books;
+
 
 ?>

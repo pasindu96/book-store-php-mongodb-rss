@@ -1,6 +1,7 @@
 <?php
-   session_start();
+	session_start();
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -15,17 +16,20 @@
 	<div class="container mt-5 text-center shadow pt-5 pl-3 pr-3 pb-5" style="background-color:white;" >
 		<h1> Book Store - Matara </h1>
 		<hr>
+		<form   method="post" action="rss.php">
 		<div class="row">
 			<div class="col-md-3 sm-12">
 				<p style="line-height:24px;"> Get Data from RSS Feed </p> 
 			</div>
 			<div class="col-md-6">
-				<input type="text" placeholder="Enter RSS Link" style="width:80%;"> 
+				<input type="text" placeholder="Enter RSS Link" style="width:80%;" name="url" id="url"> 
 			</div>
 			<div class="col-md-3">
-				<button class="btn btn-md btn-primary"> Update Database</button>
+				<button class="btn btn-md btn-primary" type="submit" name="submit"> Update Database</button>
 			</div>
 		</div>
+		</form>
+
 		<hr>
 		<div class="row">
 			<div class="col-md-9 sm-12">	
@@ -48,8 +52,8 @@
 
 		?>
 
-
-		<table class="table table-borderd">
+		<div style="width:100%">
+		<table class="table table-borderd" style="table-layout:fixed; width:100%;">
 		<tr>
 			<th>ISBN</th>
 			<th>Title</th>
@@ -73,8 +77,8 @@
 				echo "<td>".$book->description."</td>";
 				echo "<td>".$book->pub_date."</td>";
 				echo "<td>";
-				echo "<a href='edit.php?id=".$book->_id."' class='btn btn-primary'>Edit</a>";
-				echo "<a href='delete.php?id=".$book->_id."' class='btn btn-danger'>Delete</a>";
+				echo "<a href='edit_book.php?id=".$book->_id."' class='btn btn-primary'>Edit</a>";
+				echo "<a href='remove_book.php?id=".$book->_id."' class='btn btn-danger'>Delete</a>";
 				echo "</td>";
 				echo "</tr>";
 			};
@@ -82,7 +86,7 @@
 
 		?>
 		</table>
-
+		</div>
 	</div>
 
 
